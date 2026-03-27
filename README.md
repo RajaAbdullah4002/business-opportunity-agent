@@ -60,8 +60,10 @@ streamlit run main.py
 - **Secure secret handling** — API keys via .env, never hardcoded
 
 ## 📸 Screenshot
+<img width="1273" height="611" alt="OPPO" src="https://github.com/user-attachments/assets/d4e8614c-576a-4315-961f-d56e245bb1cf" />
 
-*Add screenshot here*
+
+
 
 ## 👤 Author
 

@@ -5,8 +5,11 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-import streamlit as st
-api_key = st.secrets.get("ANTHROPIC_API_KEY") or os.getenv("ANTHROPIC_API_KEY")
+try:
+    import streamlit as st
+    api_key = st.secrets["ANTHROPIC_API_KEY"]
+except:
+    api_key = os.getenv("ANTHROPIC_API_KEY")
 client = Anthropic(api_key=api_key)
 
 class AgentState(TypedDict):
